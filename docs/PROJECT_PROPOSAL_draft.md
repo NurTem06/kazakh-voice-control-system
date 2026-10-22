@@ -4,6 +4,8 @@
 
 **Project Title:** Development of an Intelligent Voice Control System in the Kazakh Language Based on Neural Networks
 
+**Project Name:** Kazakh Voice Control System
+
 **University:** Astana IT University
 
 **Educational Program:** Software Engineering
@@ -11,85 +13,170 @@
 **Group:** SE-2413
 
 **Team Members:**
-- Temirgali Nurislam Kairatuly
-- Myrzatay Alan Abayuly
-- Abdigali Nurassyl Zhandosuly
+- Temirgali Nurislam
+- Myrzatay Alan
+- Abdigali Nurassyl
 
-**Supervisor:** Turarova Marzhan Kabdikalievna
+**Scientific Supervisor:** Turarova Marzhan Kabdikalievna
+
+**Project Type:** Windows Desktop Application
+
+**Target Platform:** Windows 11 (64-bit)
 
 ## 2. Problem Statement
 
-Voice-controlled systems allow users to interact with software through spoken commands. However, achieving reliable speech recognition and command interpretation for the Kazakh language presents technical challenges, including variations in pronunciation, background noise, and the availability of suitable speech datasets.
+Voice assistants such as Apple Siri, Google Assistant, and Amazon Alexa demonstrate how speech-based interaction can simplify the use of digital devices.
 
-The project addresses the need for a Kazakh-language voice control solution that combines neural speech recognition with structured command interpretation and execution.
+However, developing reliable voice control for the Kazakh language presents challenges related to speech recognition accuracy, pronunciation variation, background noise, and the availability of suitable language resources.
 
-The actual requirements and limitations will be validated through stakeholder discussions and evaluation of existing technologies.
+The project addresses these challenges by proposing a neural network-based voice assistant designed specifically for controlling selected Windows functions through spoken Kazakh commands.
+
+The system will allow users to perform common computer operations without relying exclusively on a keyboard or mouse.
+
+The project will focus on combining Kazakh automatic speech recognition, intent identification, and secure execution of supported Windows commands.
 
 ## 3. Target Users
 
-The proposed target users include:
+The primary target users include:
 
-- Kazakh-speaking computer users who prefer voice interaction.
-- Users interested in controlling basic application functions through spoken commands.
-- Developers and researchers exploring Kazakh-language speech technologies.
+- Kazakh-speaking Windows users.
+- Students and professionals who regularly use computers.
+- Users who prefer voice-based interaction for common desktop operations.
+- Users who may benefit from an alternative to keyboard and mouse interaction.
 
-These user groups are preliminary and require validation through discussions with potential users.
+These target groups are preliminary and will be validated through user discussions.
 
 ## 4. Project Aim
 
-To design, develop, and evaluate an intelligent voice control system capable of recognizing spoken Kazakh commands, interpreting user intentions, and executing supported actions using neural network-based speech recognition.
+To design, develop, and evaluate an intelligent Windows desktop voice assistant capable of recognizing spoken Kazakh commands, interpreting user intentions, and executing supported operating system actions using neural network-based speech recognition.
 
 ## 5. Project Objectives
 
-1. Analyze existing voice control systems and Kazakh speech recognition technologies.
-2. Investigate available neural network models and speech datasets.
-3. Define functional and non-functional system requirements.
-4. Design a modular system architecture.
-5. Develop an initial user interface prototype.
-6. Implement speech recognition and command interpretation components.
-7. Integrate backend services with the user interface and neural model.
-8. Evaluate recognition accuracy, command execution reliability, and response latency.
+1. Analyze existing voice assistants and Kazakh speech recognition technologies.
+2. Investigate suitable neural network models, including Whisper and XLS-R.
+3. Define functional and non-functional requirements for a Windows desktop assistant.
+4. Design a modular software architecture.
+5. Develop a user-friendly desktop interface.
+6. Implement microphone-based voice input and audio preprocessing.
+7. Integrate a neural network-based Kazakh speech recognition model.
+8. Develop an intent recognition module for identifying user commands.
+9. Implement a secure command execution module for supported Windows operations.
+10. Evaluate speech recognition accuracy, command execution reliability, and response latency.
 
-## 6. Project Scope
+## 6. Proposed System Functionality
 
-**In Scope:**
-- Voice input from a microphone.
-- Recognition of spoken Kazakh using a neural ASR model.
-- Conversion of speech into text.
-- Identification of supported voice commands.
-- Execution of a limited set of safe application actions.
-- User feedback and error handling.
-- Testing and performance evaluation.
+The initial prototype will support a limited set of Kazakh voice commands.
 
-**Out of Scope for the Initial Prototype:**
-- Unrestricted operating system control.
-- Financial transactions.
-- Continuous background recording.
-- Direct control of physical devices.
-- Full support for multiple languages.
+| Kazakh Voice Command | English Translation | Expected Windows Action |
+|---|---|---|
+| Браузерді аш | Open the browser | Launch the default browser |
+| Калькуляторды аш | Open the calculator | Launch Windows Calculator |
+| Блокнотты аш | Open Notepad | Launch Windows Notepad |
+| Дыбысты көтер | Increase the volume | Increase system volume |
+| Дыбысты азайт | Decrease the volume | Decrease system volume |
+| Уақытты көрсет | Show the time | Display the current system time |
+| Google-дан ізде | Search on Google | Open a browser search using the supplied query |
 
-The initial command set and application domain are provisional and must be approved with the supervisor.
+The commands represent the planned initial functionality and may be refined after supervisor review and user feedback.
 
-## 7. Expected Outcomes
+## 7. Proposed System Architecture
+
+The system will use a modular architecture consisting of the following components:
+
+**1. Desktop User Interface**
+
+Allows users to start and stop voice recording, view recognized text, and receive feedback about executed commands.
+
+**2. Audio Input and Preprocessing**
+
+Captures microphone audio and prepares it for neural network inference.
+
+**3. Neural Speech Recognition Module**
+
+Uses a pretrained or fine-tuned neural network model to convert Kazakh speech into text.
+
+**4. Intent Recognition Module**
+
+Analyzes recognized text and maps supported phrases to predefined command intentions.
+
+**5. Local Backend and Command Execution Module**
+
+Validates recognized intentions and executes approved Windows actions through controlled system interfaces.
+
+**6. Feedback and Error Handling Module**
+
+Displays successful operations, unsupported commands, and recognition errors.
+
+**Main processing flow:**
+
+User Speech → Audio Processing → Neural ASR → Intent Recognition → Command Validation → Windows Action → User Feedback
+
+## 8. Proposed Technologies
+
+| Component | Candidate Technologies |
+|---|---|
+| Desktop Interface | Python PySide6 |
+| Speech Recognition | Whisper, XLS-R, NVIDIA NeMo |
+| Backend / Application Logic | Python, potentially Go |
+| Intent Recognition | Rule-based matching or ML classification |
+| Windows Integration | Windows APIs and controlled system calls |
+| Testing | Pytest, WER, CER, command execution tests |
+| Version Control | GitHub |
+| Project Management | YouTrack |
+
+The final technology selection will be justified through a comparative technical analysis.
+
+## 9. Project Scope
+
+### In Scope
+
+- Development of a Windows desktop application.
+- Capturing voice commands through a microphone.
+- Recognition of Kazakh speech using neural networks.
+- Converting speech into text.
+- Identifying supported user intentions.
+- Executing selected Windows commands.
+- Providing visual feedback and error messages.
+- Testing system accuracy, reliability, and performance.
+
+### Out of Scope for the Initial Prototype
+
+- Full operating system control.
+- Unrestricted command-line or PowerShell execution.
+- Installation and removal of software through voice commands.
+- Deletion of arbitrary user files.
+- Banking or financial operations.
+- Continuous background listening.
+- Smart home device control.
+- Full multilingual voice assistant functionality.
+
+## 10. Expected Outcomes
 
 The project is expected to deliver:
 
-- A documented and justified system architecture.
-- A functional prototype for selected Kazakh voice commands.
-- Integration of a neural speech recognition component.
-- An interface demonstrating command recognition and execution.
-- A reproducible testing methodology.
-- Evaluation results using metrics such as WER, CER, command success rate, and response latency.
-- Technical documentation and an organized GitHub repository.
+1. A documented Windows voice assistant architecture.
+2. A desktop user interface.
+3. An integrated neural network-based Kazakh speech recognition module.
+4. A command interpretation and execution subsystem.
+5. A functional prototype supporting selected Windows operations.
+6. A test suite for supported commands and error conditions.
+7. Evaluation results for ASR accuracy, intent recognition, execution success, and response latency.
+8. Technical documentation and a structured GitHub repository.
 
-## 8. Current Development Status
+## 11. Current Development Status
 
-For the first checkpoint, the team has prepared preliminary documentation, technology comparisons, architectural diagrams, testing plans, and a conceptual user interface prototype.
+At the first checkpoint, the project focuses on requirements analysis, literature review, technology comparison, architecture design, project planning, and initial prototyping.
 
-The complete voice recognition and command execution application has not yet been implemented. Further development and evaluation will be performed during subsequent stages.
+The GitHub repository and YouTrack project have been created.
 
-## 9. Conclusion
+An initial interface concept and architecture documentation have been prepared for review.
 
-The proposed project aims to demonstrate the feasibility of Kazakh-language voice interaction using neural speech recognition and modular software engineering techniques.
+The complete Windows desktop assistant has not yet been implemented. Neural model integration, operating system interaction, and experimental evaluation are planned for subsequent development stages.
 
-The current checkpoint establishes the analytical and architectural foundation for future implementation, integration, and testing.
+## 12. Conclusion
+
+The Kazakh Voice Control System aims to provide an intelligent and accessible method of interacting with Windows through spoken Kazakh commands.
+
+The project combines neural speech recognition, natural language command interpretation, desktop application development, and secure operating system integration.
+
+Its initial implementation will focus on a limited, testable set of Windows operations, establishing a foundation for future extensions and improvements.
