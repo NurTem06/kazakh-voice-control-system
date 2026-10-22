@@ -1,0 +1,23 @@
+# Secrets and local state
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+node_modules/
+.DS_Store
+.idea/
+.vscode/
+# Sensitive audio, corpora, models, and recordings
+recordings/
+private_data/
+data/raw/
+models/
+*.wav
+*.mp3
+*.flac
+# allow small demo audio only after explicit license/consent review
