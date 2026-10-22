@@ -44,7 +44,7 @@ Open `prototype/index.html` locally in a browser. The example text flow is clien
 Documentation and the HTML mockup can be opened without installing dependencies. There is no runnable neural application yet; implementation/test commands will be documented with the first code pull request.
 
 ## Project management
-- YouTrack: **[ADD REAL YOUTrack URL]**
+- YouTrack: https://kazakh-voice-control.youtrack.cloud/projects/KVC
 - Supervisor/committee access: **[CHECK REAL ACCESS]**
 - Stage/version: **[SET REAL TAG AFTER FINAL REVIEW]**
 - Full checkpoint report: **[ADD LINK TO FINAL SINGLE PDF]**
