@@ -326,15 +326,12 @@ The following parts of KVC-11 are prepared:
 - A list of resulting proposed project decisions.
 - Traceability between reported feedback and project documentation.
 - A follow-up checklist and review log.
-
-The following evidence is still pending:
-
 - Formal confirmation or correction of the consultation summary.
 - Verified supervisor review comments.
 - Evidence of revisions resulting from confirmed feedback.
 - References to the corresponding reviewed Git changes.
 
-**Current status:** Consultation documented; formal supervisor verification pending.
+**Current status:** Accepted. Work is in progress..
 
 The KVC-11 task should remain open or under review until the required supervisor-feedback evidence has been obtained.
 
