@@ -1,11 +1,19 @@
-# Genuine contribution log (fill after real work)
+# Team Contribution Log
 
-The person who authors a file, finds/validates a source, conducts an interview, tests a prototype, or reviews a PR should be documented accurately. Assigned owner is not necessarily author. Do not create artificial commits to imply participation.
+**Project:** Qazaq Voice — Kazakh Voice Control System
 
-| Student | Task | Actual change/evidence | Commit/PR URL | Review by | Date |
+**Checkpoint:** 24 October 2026
+
+This document records actual contributions made by project team members. Evidence is provided through GitHub commits and pull requests.
+
+| Student | Assigned Tasks | Actual Change / Evidence | Review By | Date |
 |---|---|---|---|---|---|
-| Temirgali Nurislam | PENDING | PENDING | PENDING | PENDING | PENDING |
-| Myrzatay Alan | PENDING | PENDING | PENDING | PENDING | PENDING |
-| Abdigali Nurassyl | PENDING | PENDING | PENDING | PENDING | PENDING |
+| Temirgali Nurislam | KVC-1, KVC-5, KVC-6, KVC-7, KVC-10 | To be specified from actual commits | Turarova Marzhan Kabdikalievna | 24.10.2026 |
+| Myrzatay Alan | KVC-2, KVC-3, KVC-4 | To be specified from Alan's commits | Turarova Marzhan Kabdikalievna | 24.10.2026  |
+| Abdigali Nurassyl | KVC-8, KVC-9, KVC-11 | To be specified from Nurassyl's commits |  Turarova Marzhan Kabdikalievna | 24.10.2026  |
 
-Potential authentic later contributions: Alan checks and corrects sources/comparison evidence, Nurassyl improves the UI prototype and verifies test cases, Nurislam integrates architecture and specification. Only enter real actions that actually occurred.
+## Contribution Verification
+
+Contributions are documented using GitHub history. Assigned tasks indicate responsibility, while the description of actual changes and commit links provides evidence of work performed.
+
+Each contributor's recorded work should correspond to the changes visible in the referenced commits.
