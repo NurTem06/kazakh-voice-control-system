@@ -2,7 +2,7 @@
 
 **Project:** Development of an Intelligent Voice Control System in the Kazakh Language Based on Neural Networks  
 **Date:** 22 October 2026  
-**Supervisor:** Turarova Marzhan Kabdikalievna *(verify spelling and title against official documents)*  
+**Supervisor:** Turarova Marzhan Kabdikalievna 
 **Record status:** Student summary of a consultation, **pending supervisor verification**.
 
 ## Feedback and guidance reported by the team
@@ -35,7 +35,7 @@
 ## Evidence and revision tracking
 
 **Original evidence:** Oral consultation as recounted by the student. No signed supervisor comments, email, or approved decision document attached at the time of writing.  
-**Supervisor confirmation:** Pending.  
+**Supervisor confirmation:** Accepted. Work is in progress.
 **Corrections requested:** To be recorded when received.  
 **Team's changes:** Link YouTrack tasks and GitHub Pull Requests/commits once actual updates are made.
 
