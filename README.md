@@ -152,9 +152,9 @@ The documentation is organized into eleven first-checkpoint tasks.
 
 ### First Checkpoint Report
 
-- [Final Report — PDF](Qazaq_Voice_First_Checkpoint_Report.pdf)
-- [Final Report — DOCX](Qazaq_Voice_First_Checkpoint_Report.docx)
-- [Final Report — Markdown](Qazaq_Voice_First_Checkpoint_Report.md)
+- [Final Report — PDF](Qazaq_Voice_First_Checkpoint_Report_Condensed.pdf)
+- [Final Report — DOCX](Qazaq_Voice_First_Checkpoint_Report_Condensed.docx)
+- [Final Report — Markdown](Qazaq_Voice_First_Checkpoint_Report_Condensed.md)
 
 These links refer to the consolidated report files included in the repository submission.
 
