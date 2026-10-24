@@ -1,0 +1,27 @@
+flowchart LR
+    User["Windows User"]
+    Mic["Microphone"]
+
+    subgraph System["Qazaq Voice - System Boundary"]
+        QV["Kazakh Voice Control Desktop Application"]
+    end
+
+    Windows["Windows 11 Operating System"]
+    Apps["Approved Windows Applications"]
+    Search["Web Search Service"]
+
+    User -->|"Voice or text commands"| QV
+    Mic -->|"Recorded audio"| QV
+
+    QV -->|"Transcript, status and feedback"| User
+    QV -->|"Validated, allowed actions"| Windows
+    Windows -->|"Execution results and errors"| QV
+
+    Windows -->|"Launch approved applications"| Apps
+    Apps -->|"Browser search request"| Search
+
+    classDef system fill:#dbeafe,stroke:#2563eb,color:#172554
+    classDef external fill:#f1f5f9,stroke:#64748b,color:#0f172a
+
+    class QV system
+    class User,Mic,Windows,Apps,Search external

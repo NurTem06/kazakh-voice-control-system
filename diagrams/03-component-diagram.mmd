@@ -1,0 +1,53 @@
+
+flowchart TB
+    User["Windows User"]
+    Mic["Microphone"]
+    Windows["Windows 11 Operating System"]
+
+    subgraph QV["Qazaq Voice - Internal Components"]
+        direction TB
+
+        UI["Desktop UI - PySide6"]
+        Audio["Audio Capture"]
+        Preprocess["Audio Preprocessing"]
+        ASR["Neural ASR Adapter"]
+        Normalize["Text Normalization"]
+        Intent["Intent Recognition"]
+        Validator["Action Validator"]
+        Allowlist[("Approved Command Allowlist")]
+        Executor["Windows Executor"]
+        Feedback["Feedback and Session History"]
+
+        UI -->|"Start / stop recording"| Audio
+        Audio --> Preprocess
+        Preprocess --> ASR
+        ASR -->|"Kazakh transcript"| Normalize
+
+        UI -->|"Typed command"| Normalize
+
+        Normalize --> Intent
+        Intent -->|"Intent ID and parameters"| Validator
+
+        Allowlist -.->|"Validation policy"| Validator
+        Validator -->|"Approved action only"| Executor
+
+        Validator -->|"Rejected command"| Feedback
+        Executor -->|"Action result"| Feedback
+        Feedback -->|"Display result"| UI
+    end
+
+    User -->|"Voice or text input"| UI
+    Mic -->|"Audio input"| Audio
+
+    Executor -->|"Windows API or approved app"| Windows
+    Windows -->|"Success or error"| Executor
+
+    classDef input fill:#dbeafe,stroke:#2563eb,color:#172554
+    classDef processing fill:#f1f5f9,stroke:#64748b,color:#0f172a
+    classDef security fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef execution fill:#dcfce7,stroke:#16a34a,color:#14532d
+
+    class UI,Audio input
+    class Preprocess,ASR,Normalize,Intent processing
+    class Validator,Allowlist security
+    class Executor,Feedback execution
